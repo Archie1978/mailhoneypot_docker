@@ -1,0 +1,11 @@
+
+
+userdb {
+   driver = checkpassword
+   args = /usr/local/bin/fakesasl.sh
+}
+passdb {
+   driver = checkpassword
+   args = /usr/local/bin/fakesasl.sh
+}
+

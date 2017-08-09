@@ -1,0 +1,13 @@
+mailhoneypot:
+   image: idesi/mailhoneypot
+   restart: always
+   ports:
+      - "$BIND_ADDRESS:80:80"
+      - "$BIND_ADDRESS:443:443"
+      - "$BIND_ADDRESS:25:25"
+      - "$BIND_ADDRESS:465:465"
+      - "$BIND_ADDRESS:220:220"
+      - "$BIND_ADDRESS:993:993"
+      - "$BIND_ADDRESS:110:110"
+      - "$BIND_ADDRESS:995:995"
+   env_file: .env
