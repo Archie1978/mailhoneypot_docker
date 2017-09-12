@@ -44,8 +44,8 @@ relay_transport = error
 local_recipient_maps =
 inet_protocols = all
 
-virtual_uid_maps = static:106
-virtual_gid_maps = static:110
+virtual_uid_maps = static:102
+virtual_gid_maps = static:105
 virtual_mailbox_domains = pcre:/etc/postfix/vmaildomain
 virtual_mailbox_maps = pcre:/etc/postfix/vmailbox
 virtual_mailbox_base = /var/vmail
